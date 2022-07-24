@@ -4,28 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Boilerplate HTML, CSS, JS</title>
-    <meta name="description" content="Boilerplate para um projeto usando HTML, CSS e JS" />
+    <title>Safe Travel</title>
+    <meta name="description" content="Travel to San Francisco Safely" />
 
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/jpg" href="./assets/favicon.ico" />
 
-    <!-- GOOGLE FONTS -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
-    <!-- *currently set to "Roboto". Feel free to change it to whatever you like* -->
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    /> -->
-
     <!-- CSS STYLE LINK -->
     <link rel="stylesheet" href="./styles/global.css" />
-    <!-- SVG SCRIPT LINK -->
-    <script src="/scripts/svg-inject.min.js"></script>
   </head>
   <body>
-    <h1>olar mundo!</h1>
+    <div class="app">
+      <header class="header">
+        <strong>SaFe Travel.</strong>
 
-    <script src="./scripts/index.js"></script>
+        <div id="navigation">
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Discover</a>
+              </li>
+              <li>
+                <a href="/">Special Deals</a>
+              </li>
+              <li>
+                <a href="/">Community</a>
+              </li>
+              <li>
+                <a href="/">About Us</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <div class="navigation__right">
+            <button type="button">Sign In</button>
+            <button type="button">Register</button>
+          </div>
+        </div>
+
+        <button type="button" id="button__mobile" onclick="changeVisibleMenu()">
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <main class="main">
+        <h1>
+          Travel to
+          <br />
+          San Francisco
+          <br />
+          Safely.
+        </h1>
+        <p>Full arranged VIP San Francisco travel according to your schedule.</p>
+
+        <div class="main__footer">
+          <p>
+            One call
+            <br />
+            All you need
+          </p>
+          <p>
+            Call Now
+            <br />
+            444-44-44
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
